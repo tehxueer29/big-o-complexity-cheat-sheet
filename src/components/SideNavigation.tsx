@@ -1,7 +1,7 @@
 export default function SideNavigation() {
   return (
     <>
-      <div>Introduction</div>
+      <div className="basis-1/4">Introduction</div>
     </>
   );
 }
