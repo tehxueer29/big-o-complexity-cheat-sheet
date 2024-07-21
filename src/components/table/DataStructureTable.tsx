@@ -14,9 +14,9 @@ export default function DataStructureTable() {
           <HeaderTD text="Stack" isSideHeader />
           <HeaderTD text="Queue" isSideHeader />
           <HeaderTD text="Singly-Linked List" isSideHeader />
-          <HeaderTD text="Doubly-Linked list" isSideHeader />
-          <HeaderTD text="Hash table" isSideHeader />
-          <HeaderTD text="Binary Search tree" isSideHeader />
+          <HeaderTD text="Doubly-Linked List" isSideHeader />
+          <HeaderTD text="Hash Table" isSideHeader />
+          <HeaderTD text="Binary Search Tree" isSideHeader />
         </div>
       ),
     },
@@ -29,14 +29,14 @@ export default function DataStructureTable() {
             <HeaderTD text="Worst" />
           </div>
           <div className="grid grid-cols-8 gap-1">
-            <HeaderTD text="Access" />
-            <HeaderTD text="Search" />
-            <HeaderTD text="Insertion" />
-            <HeaderTD text="Deletion" />
-            <HeaderTD text="Access" />
-            <HeaderTD text="Search" />
-            <HeaderTD text="Insertion" />
-            <HeaderTD text="Deletion" />
+            <HeaderTD text="A" tooltip="Access" />
+            <HeaderTD text="S" tooltip="Search" />
+            <HeaderTD text="I" tooltip="Insert" />
+            <HeaderTD text="D" tooltip="Delete" />
+            <HeaderTD text="A" tooltip="Access" />
+            <HeaderTD text="S" tooltip="Search" />
+            <HeaderTD text="I" tooltip="Insert" />
+            <HeaderTD text="D" tooltip="Delete" />
             <ComplexityTD complexity="O(1)" />
             <ComplexityTD complexity="O(n)" />
             <ComplexityTD complexity="O(n)" />
@@ -69,6 +69,30 @@ export default function DataStructureTable() {
             <ComplexityTD complexity="O(n)" />
             <ComplexityTD complexity="O(1)" />
             <ComplexityTD complexity="O(1)" />
+            <ComplexityTD complexity="O(n)" />
+            <ComplexityTD complexity="O(n)" />
+            <ComplexityTD complexity="O(1)" />
+            <ComplexityTD complexity="O(1)" />
+            <ComplexityTD complexity="O(n)" />
+            <ComplexityTD complexity="O(n)" />
+            <ComplexityTD complexity="O(1)" />
+            <ComplexityTD complexity="O(1)" />
+            <div />
+            <ComplexityTD complexity="O(1)" />
+            <ComplexityTD complexity="O(1)" />
+            <ComplexityTD complexity="O(1)" />
+            <div />
+            <ComplexityTD complexity="O(n)" />
+            <ComplexityTD complexity="O(n)" />
+            <ComplexityTD complexity="O(n)" />
+            <ComplexityTD complexity="O(log n)" />
+            <ComplexityTD complexity="O(log n)" />
+            <ComplexityTD complexity="O(log n)" />
+            <ComplexityTD complexity="O(log n)" />
+            <ComplexityTD complexity="O(n)" />
+            <ComplexityTD complexity="O(n)" />
+            <ComplexityTD complexity="O(n)" />
+            <ComplexityTD complexity="O(n)" />
           </div>
         </>
       ),

@@ -8,28 +8,28 @@ export default function Introduction() {
       text: "How I Mastered DSA ↗",
     },
     {
-      link: "https://blog.algomaster.io/p/how-i-mastered-data-structures-and-algorithms",
-      text: "How I Mastered DSA ↗",
+      link: "https://blog.algomaster.io/p/57bd4963-462f-4294-a972-4012691fc729",
+      text: "Algorithmic Complexity ↗",
     },
     {
-      link: "https://blog.algomaster.io/p/how-i-mastered-data-structures-and-algorithms",
-      text: "How I Mastered DSA ↗",
+      link: "https://leetcode.com/discuss/study-guide/1800120/become-master-in-linked-list",
+      text: "Linked List ↗",
     },
     {
-      link: "https://blog.algomaster.io/p/how-i-mastered-data-structures-and-algorithms",
-      text: "How I Mastered DSA ↗",
+      link: "https://www.amazon.com/Data-Structures-Algorithms-Made-Easy-ebook/dp/B0CBW278NC/",
+      text: "Data Structures And Algorithms Made Easy ↗",
     },
     {
-      link: "https://blog.algomaster.io/p/how-i-mastered-data-structures-and-algorithms",
-      text: "How I Mastered DSA ↗",
+      link: "https://visualgo.net/en",
+      text: "VisuAlgo ↗",
     },
     {
-      link: "https://blog.algomaster.io/p/how-i-mastered-data-structures-and-algorithms",
-      text: "How I Mastered DSA ↗",
+      link: "https://medium.com/jl-codes/understanding-sorting-algorithms-af6222995c8",
+      text: "Sorting Algorithms ↗",
     },
     {
-      link: "https://blog.algomaster.io/p/how-i-mastered-data-structures-and-algorithms",
-      text: "How I Mastered DSA ↗",
+      link: "https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu",
+      text: "William Fiset's Data Structure Playlist ↗",
     },
   ];
 
@@ -46,7 +46,7 @@ export default function Introduction() {
           <a
             href="https://github.com/tehxueer29/big-o-complexity-cheat-sheet"
             target="_blank"
-            className="text-primary-500 hover:text-primary-700 underline underline-offset-2 transition"
+            className="text-primary-500 underline underline-offset-2 transition hover:text-primary-700"
           >
             GitHub
           </a>

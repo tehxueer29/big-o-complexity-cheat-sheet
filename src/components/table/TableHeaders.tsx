@@ -17,7 +17,7 @@ export default function TableHeaders({ col1, col2, col3 }: TableHeadersProps) {
       index == 0 ? "basis-1/6" : index == 1 ? "basis-3/6" : "basis-2/6";
     return (
       <div className={`${basis} space-y-1`}>
-        <div className="bg-white-200 px-6 py-3 text-center font-bold">
+        <div className="bg-white-200 py-3 text-center text-sm font-bold">
           {column.title}
         </div>
         {column.children}

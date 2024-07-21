@@ -26,7 +26,7 @@ export default function ComplexityTD({ complexity }: ComplexityTDProps) {
   return (
     <>
       <div
-        className={`${cellColor} basis-1/12 px-6 py-3 text-center text-xs font-bold`}
+        className={`${cellColor} flex basis-1/12 justify-center py-3 text-center text-xs font-bold`}
       >
         {complexity}
       </div>
