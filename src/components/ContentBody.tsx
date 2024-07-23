@@ -7,7 +7,7 @@ import ExtraResources from "./sections/ExtraResources";
 export default function ContentBody() {
   return (
     <>
-      <div className="grow px-80 pb-32 pt-20">
+      <div className="grow px-3 md:pb-32 xl:pt-20 md:px-40 xl:px-30 2xl:px-96">
         <Introduction />
         <BigOComplexityChart />
         <DataStructureOperations />

@@ -17,10 +17,10 @@ export default function Section({
     <>
       <div className={padding}>
         {firstSection ? "" : <div className="h-0.5 bg-white-200" />}
-        <div className={`${fontSize} font-bold`}>{title}</div>
+        <div className={`${fontSize} font-bold`} id={title.replace(/ /g,'')}>
+          {title}
+        </div>
         {children}
-        {/* <div>{firstSection}</div>
-        <div>{mainSection}</div> */}
       </div>
     </>
   );

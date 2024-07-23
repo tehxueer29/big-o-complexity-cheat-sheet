@@ -33,8 +33,8 @@ export default function Introduction() {
     },
   ];
 
-  const chipsEle = chips.map((chip) => (
-    <Chip link={chip.link}>{chip.text}</Chip>
+  const chipsEle = chips.map((chip, index) => (
+    <Chip key={index} link={chip.link}>{chip.text}</Chip>
   ));
 
   return (

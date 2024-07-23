@@ -1,16 +1,43 @@
+import React from "react";
 import HeaderTD from "./HeaderTD";
-import ComplexityTD from "./ComplexityTD";
 import TableHeaders from "./TableHeaders";
+import ComplexityTD, { Complexity } from "./ComplexityTD";
+
+interface TableItem {
+  name: string;
+  bestTime: Complexity;
+  averageTime: Complexity;
+  worstTime: Complexity;
+  worstSpace: Complexity;
+}
 
 export default function ArraySortingTable() {
+  const tableItems: TableItem[] = [
+    {
+      name: "Quicksort",
+      bestTime: "O(n log n)",
+      averageTime: "O(n log n)",
+      worstTime: "O(n^2)",
+      worstSpace: "O(log n)",
+    },
+    {
+      name: "Mergesort",
+      bestTime: "O(n log n)",
+      averageTime: "O(n log n)",
+      worstTime: "O(n log n)",
+      worstSpace: "O(n)",
+    },
+  ];
+
   const columns = [
     {
       title: "Algorithm",
       children: (
-        <div>
+        <div className="space-y-1">
           <HeaderTD text="" isSideHeader />
-          <HeaderTD text="Quicksort" isSideHeader />
-          <HeaderTD text="Mergesort" isSideHeader />
+          {tableItems.map((item, index) => (
+            <HeaderTD key={index} text={item.name} isSideHeader />
+          ))}
         </div>
       ),
     },
@@ -21,12 +48,15 @@ export default function ArraySortingTable() {
           <HeaderTD text="Best" />
           <HeaderTD text="Average" />
           <HeaderTD text="Worst" />
-          <ComplexityTD complexity="O(n log n)" />
-          <ComplexityTD complexity="O(n log n)" />
-          <ComplexityTD complexity="O(n^2)" />
-          <ComplexityTD complexity="O(n log n)" />
-          <ComplexityTD complexity="O(n log n)" />
-          <ComplexityTD complexity="O(n log n)" />
+          {tableItems.map((item, index) => {
+            return (
+              <React.Fragment key={index}>
+                <ComplexityTD complexity={item.bestTime} />
+                <ComplexityTD complexity={item.averageTime} />
+                <ComplexityTD complexity={item.worstTime} />
+              </React.Fragment>
+            );
+          })}
         </div>
       ),
     },
@@ -35,8 +65,9 @@ export default function ArraySortingTable() {
       children: (
         <>
           <HeaderTD text="Worst" />
-          <ComplexityTD complexity="O(log n)" />
-          <ComplexityTD complexity="O(n)" />
+          {tableItems.map((item, index) => (
+            <ComplexityTD key={index} complexity={item.worstSpace} />
+          ))}
         </>
       ),
     },

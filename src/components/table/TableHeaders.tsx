@@ -15,9 +15,10 @@ export default function TableHeaders({ col1, col2, col3 }: TableHeadersProps) {
   const columnsEle = columns.map((column, index) => {
     const basis =
       index == 0 ? "basis-1/6" : index == 1 ? "basis-3/6" : "basis-2/6";
+
     return (
-      <div className={`${basis} space-y-1`}>
-        <div className="bg-white-200 py-3 text-center text-sm font-bold">
+      <div key={index} className={`${basis} space-y-1`}>
+        <div className="bg-white-200 py-3 text-center md:text-sm font-bold text-[0.5rem]">
           {column.title}
         </div>
         {column.children}

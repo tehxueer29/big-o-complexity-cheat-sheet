@@ -1,13 +1,16 @@
+export type Complexity =
+  | ""
+  | "O(1)"
+  | "O(log n)"
+  | "O(n)"
+  | "O(n log n)"
+  | "O(n^2)"
+  | "O(2^n)"
+  | "O(n!)"
+  | "O(n^n)";
+
 interface ComplexityTDProps {
-  complexity:
-    | "O(1)"
-    | "O(log n)"
-    | "O(n)"
-    | "O(n log n)"
-    | "O(n^2)"
-    | "O(2^n)"
-    | "O(n!)"
-    | "O(n^n)";
+  complexity: Complexity;
 }
 
 export default function ComplexityTD({ complexity }: ComplexityTDProps) {
@@ -26,9 +29,9 @@ export default function ComplexityTD({ complexity }: ComplexityTDProps) {
   return (
     <>
       <div
-        className={`${cellColor} flex basis-1/12 justify-center py-3 text-center text-xs font-bold`}
+        className={`${cellColor} flex basis-1/12 justify-center text-clip py-3 text-center md:text-[0.6rem] lg:text-xs text-[0.5rem] font-bold`}
       >
-        {complexity}
+        <p className="truncate hover:text-clip">{complexity}</p>
       </div>
     </>
   );
