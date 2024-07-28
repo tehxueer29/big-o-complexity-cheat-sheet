@@ -14,11 +14,11 @@ export default function TableHeaders({ col1, col2, col3 }: TableHeadersProps) {
 
   const columnsEle = columns.map((column, index) => {
     const basis =
-      index == 0 ? "basis-1/6" : index == 1 ? "basis-3/6" : "basis-2/6";
+      index == 0 ? "basis-1/6" : index == 1 ? "basis-4/6" : "basis-1/6";
 
     return (
       <div key={index} className={`${basis} space-y-1`}>
-        <div className="bg-white-200 py-3 text-center md:text-sm font-bold text-[0.5rem]">
+        <div className="bg-white-200 py-3 text-center md:text-xs font-bold text-[0.5rem] text-nowrap">
           {column.title}
         </div>
         {column.children}

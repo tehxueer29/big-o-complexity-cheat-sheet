@@ -14,8 +14,8 @@ export default function BigOComplexityChart() {
       <Section title="Big O Complexity Chart">
         <div className="bg-white-200 p-3">
           <div className="flex flex-wrap justify-center gap-3 pb-3 text-center">
-            {complexityLegends.map((legend) => (
-              <div className={`${legend.color} rounded px-3 py-1 text-sm`}>
+            {complexityLegends.map((legend, index) => (
+              <div key={index} className={`${legend.color} rounded px-3 py-1 text-sm`}>
                 {legend.name}
               </div>
             ))}

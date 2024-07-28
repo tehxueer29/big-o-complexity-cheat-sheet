@@ -15,7 +15,7 @@ export default function SectionLink({ title, childTitle }: SectionLinkProps) {
         {childTitle.map((child, index) => (
           <a
             href={child.link}
-            className="text-nowrap text-black-800 opacity-70"
+            className="text-nowrap text-black-800 opacity-70 hover:opacity-90 transition"
             key={index}
           >
             {child.name}
