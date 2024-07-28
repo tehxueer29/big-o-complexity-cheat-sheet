@@ -21,7 +21,7 @@ export default function BigOComplexityChart() {
             ))}
           </div>
 
-          <img src={Chart} alt="" />
+          <img src={Chart} alt="Big O Complexity Graph" />
         </div>
       </Section>
     </>

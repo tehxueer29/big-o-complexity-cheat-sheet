@@ -24,7 +24,7 @@ export default function Introduction() {
           </Card>
           <Card>
             <div className="flex items-center gap-x-3 p-3">
-              <img src={Credits} alt="" className="w-20" />
+              <img src={Credits} alt="Big O Complexity Website Thumbnail" className="w-20" />
               <p className="font-bold">
                 Full credits to{" "}
                 <a
