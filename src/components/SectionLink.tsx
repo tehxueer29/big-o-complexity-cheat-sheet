@@ -12,10 +12,11 @@ export default function SectionLink({ title, childTitle }: SectionLinkProps) {
         {title.name}
       </a>
       <div className="flex flex-col gap-2">
-        {childTitle.map((child) => (
+        {childTitle.map((child, index) => (
           <a
             href={child.link}
             className="text-nowrap text-black-800 opacity-70"
+            key={index}
           >
             {child.name}
           </a>

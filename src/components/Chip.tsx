@@ -5,7 +5,7 @@ interface ChipProps {
   link?: string;
 }
 
-export default function Card({ children, link }: ChipProps) {
+export default function Chip({ children, link }: ChipProps) {
   const linkTag: keyof JSX.IntrinsicElements = link ? "a" : "div";
   const linkAttr = link ? { href: link, target: "_blank" } : {};
 

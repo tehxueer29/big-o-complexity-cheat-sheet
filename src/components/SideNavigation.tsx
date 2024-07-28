@@ -21,18 +21,19 @@ const SectionLinks = [
 export default function SideNavigation() {
   return (
     <>
-      <div className="flex">
-        <div className="m-auto p-3 font-bold md:pt-0 lg:px-11 lg:pb-11 lg:ps-28 xl:m-0">
+      <div className="xl:flex pb-11 xl:pb-0">
+        <div className="p-3 font-bold md:ps-40 md:pt-0 xl:pe-12 xl:ps-24">
           <div className="md:pt-11 xl:sticky xl:top-0">
-            {SectionLinks.map((sectionLink) => (
+            {SectionLinks.map((sectionLink, index) => (
               <SectionLink
                 title={sectionLink.title}
                 childTitle={sectionLink.childTitle}
+                key={index}
               />
             ))}
           </div>
         </div>
-        <div className="bg-white-200 xl:w-3"></div>
+        <div className="h-3 bg-white-200 xl:h-auto xl:w-3"></div>
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 import Section from "../Section";
 import Card from "../Card";
+import Credits from "../../assets/credits.jpg";
 
 export default function Introduction() {
   return (
@@ -23,13 +24,13 @@ export default function Introduction() {
           </Card>
           <Card>
             <div className="flex items-center gap-x-3 p-3">
-              <img src="src\assets\credits.jpg" alt="" className="w-20" />
+              <img src={Credits} alt="" className="w-20" />
               <p className="font-bold">
                 Full credits to{" "}
                 <a
                   href="https://www.bigocheatsheet.com/"
                   target="_blank"
-                  className="text-primary-500 hover:text-primary-700 underline underline-offset-2 transition"
+                  className="text-primary-500 underline underline-offset-2 transition hover:text-primary-700"
                 >
                   BigOCheatSheet.com
                 </a>

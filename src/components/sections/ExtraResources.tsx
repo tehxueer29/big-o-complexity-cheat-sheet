@@ -1,7 +1,7 @@
 import Section from "../Section";
 import Chip from "../Chip";
 
-export default function Introduction() {
+export default function ExtraResources() {
   const chips = [
     {
       link: "https://blog.algomaster.io/p/how-i-mastered-data-structures-and-algorithms",

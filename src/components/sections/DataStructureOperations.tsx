@@ -1,7 +1,7 @@
 import Section from "../Section";
 import DataStructureTable from "../table/DataStructureTable";
 
-export default function Introduction() {
+export default function DataStructureOperations() {
   return (
     <>
       <Section title="Data Structure Operations">
